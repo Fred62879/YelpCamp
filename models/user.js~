@@ -1,0 +1,10 @@
+var mongoose = reuqire('mongoose');
+var plm = require('passport-local-mongoose');
+
+userSchema = new mongoose.Schema({
+    username: String,
+    password: String
+});
+
+userSchema.plugin(plm);
+modules.export(new mongoose.user('user', userSchema));
